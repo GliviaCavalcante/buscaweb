@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css">
+
+  <title>criar-perfil</title>
+</head>
+<link rel="stylesheet" href="css/criarperfil.css">
+<body>
+  <!-- CONTAINER INICIO -->
+  <div class="container">
+    <!-- PRIMEIRA DIV -->
+    <div class="form1">
+
+<div class="pre-visu">
+  <center><label>LOGO:</label></center>
+   <div class="input-file-upload ">
+    <div class="upload-btn">
+      <!-- <center><button type="button" class="bt">SELECIONAR ARQUIVO</button></center> -->
+      <input type="file" name="imagem" id="imagem" accept="image/*">
+    </div>
+    <img id="preview" src="">
+   </div>
+   
+  </div>
+    </div>
+
+   <!-- DIV DA LINHA--> <div class="linha-vertical"></div>
+
+   <!-- INICIO SEGUNDA DIV -->
+    <div class="form2">
+      <div class="input-box">
+        <label >NOME:</label>
+        <input  type="text"  placeholder="Digite aqui" size="60" id="nome" name="nome" value="">
+    </div>
+    <div class="input-box">
+      <label >BAIRRO:</label>
+      <br>
+      <input type="text"  placeholder="Digite aqui" size="58" id="bairro" name="bairro" value="">
+  </div>
+  <div class="input-box">
+    <label >RUA:</label>
+    <br>
+    <input  type="text"  placeholder="Digite aqui" size="62" id="rua" name="rua" value="">
+</div>
+<div class="input-box">
+  <label >NÚMERO:</label>
+  <br>
+  <input  type="text" placeholder="Digite aqui" size="57" id="numero" name="numero" value="">
+</div>
+<div class="input-box">
+  <label >COMPLEMENTO:</label>
+  <br>
+  <input  type="text" placeholder="Digite aqui" size="50" id="complemento" name="complemento" value="">
+</div>
+<div class="input-box">
+  <label >CNPJ:</label>
+  <br>
+  <input  type="text"  placeholder="Digite aqui" size="61" id="cnpj" name="cnpj" value="">
+</div>
+<div class="input-box">
+  <label >DESCRIÇÃO:</label>
+  <br>
+  <input  type="text"  placeholder="Digite aqui" size="54" id="descricao" name="descricao" value="">
+</div>
+<div class="input-box">
+  <label >TELEFONE 1:</label>
+  <br>
+  <input  type="text" placeholder="Digite aqui" size="55" id="telefone" name="telefone" value="">
+</div>
+<div class="input-box">
+<label >TELEFONE 2:</label>
+<br>
+<input type="text"  placeholder="Digite aqui" size="54" id="telefone2" name="telefone2" value="">
+<input type="hidden" id="url" value="../crud/crud-updateCadastro.php">
+</div>
+<center><button type="submit" class="bt">ENVIAR</button>
+<a href="../perfilEmpresa/perfilAdm"><button type="button" class="bt">VOLTAR</button></a></center>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
+
+    <script src="../js/custom.js"></script>
+
+</body>
+</html>

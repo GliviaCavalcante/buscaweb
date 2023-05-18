@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(150deg, #db3a3a,rgb(126, 15, 15), #202020);
+   
+}
+.container{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    box-shadow: 15px 15px 15px rgba(0,0,0, .400);
+    background-color:white;
+    border-radius: 15px;
+}
+.container:hover{
+    opacity: 100%;
+    transition: 0.5s;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.596);
+}
+.container:not(:hover){
+    transition: 0.5s;
+    opacity: 80%;
+} 
+.linha-vertical{
+  background-color:  rgb(255, 93, 93);
+   width: 7px; 
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 10px;
+   margin-top: auto;
+   margin-bottom: auto;
+   height: 450px;
+
+}
+
+.form1,.form2{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right:5%;
+    text-align: left;
+}
+.input-box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4%;
+}
+
+input{
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 2rem;
+    padding-left: 5px;
+    padding:5px ;
+}
+
+/* CSS DA VISUALIZAÇAO */
+.input-file-upload{
+    display: flex;
+    flex-direction: column;
+}
+.bt{
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(255, 93, 93);
+    text-align: center;
+    padding: 11px 10px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  
+}
+.bt:hover{
+transition: 0.5s;
+background: rgb(206, 35, 35);
+}
+
+.upload-img{
+    display: inline-block;
+    border: 2px dashed rgb(255, 93, 93);
+    border-radius: 5px;
+    width: 260px;
+    height: 260px;
+    margin-bottom: 5px;
+    background-color: rgba(226, 107, 107, 0.247);
+}
+.form1{
+    margin-left: 9%;
+    margin-right: 0%;
+}
+.form2{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.pre-visu{
+    margin-top: 20%;
+
+}
+.upload-btn{
+    position: flex;
+    overflow: hidden;
+    display: inline-block;
+}
+input[type="file"]{
+    display: none;
+}
+
+/* RESPONSIVIDADE */
+@media (min-width: 300px)
+{
+ .container{
+    width: 90%;
+    height: 95%
+ }
+ .pre-visu{
+    display: none;
+ }
+.form2{
+   margin-top: 40%;
+}
+
+}
